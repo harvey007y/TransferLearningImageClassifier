@@ -1,6 +1,8 @@
 # TransferLearningImageClassifier
 Uses tensorflow.js to create an image classifier that uses your webcam
 
+Example code is explained at: https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#0
+
 We will make a custom 3-class object classifier using the webcam on the fly. We're going to make a classification through MobileNet. We will take an internal representation (activation) of the model for a particular webcam image and use that for classification.
 
 We'll use a module called a "K-Nearest Neighbors Classifier", which effectively lets us put webcam images (actually, their MobileNet activations) into different categories (or "classes"), and when the user asks to make a prediction we simply choose the class that has the most similar activation to the one we are making a prediction for.
